@@ -6,4 +6,4 @@
 
 ### Live Link (github): https://firozreja.github.io/foodies-landing-page/
 
-### Live Link (netlify):
+### Live Link (netlify): https://my-foodies-page.netlify.app/
