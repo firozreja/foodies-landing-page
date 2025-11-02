@@ -1,9 +1,10 @@
-/* ============tablet and medium device =======*/
+/* ============tablet and Desktop device =======*/
 
 /*================= Desktop ================*/
-@media (min-width: 1025px) {
+@media (min-width: 1201px) {
   .main-container {
     width: 100%;
+    margin: 0 auto;
     padding: 23px 8.438rem 2rem 8.438rem;
     background-color: #f3fcf7;
     height: 46.875rem;
@@ -148,7 +149,6 @@
   }
   .benefit-section .benefit .benefit-left {
     width: 541px;
-    flex: 1;
     height: 608px;
     background-color: #f0f1ec;
     display: flex;
@@ -230,6 +230,7 @@
   }
   .stars-right {
     display: flex;
+    flex: 1;
     flex-direction: column;
     align-items: flex-start;
     background-image: url("./images/Dotted.svg");
@@ -278,24 +279,32 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 0;
-    margin-top: 4.375rem;
+    width: 100%;
   }
+
   .features-items-img {
-    /* width: 25%; */
-    width: 18.281rem;
-    height: 18.281rem;
+    flex: 0 0 25%;
+    height: 18.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
   }
-  .features-img {
-    width: 18.281rem;
-    height: 18.281rem;
+  .features-items-img .features-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
   .features-text {
-    width: 18.281rem;
-    height: 18.281rem;
-    border: 1.5px solid #06c167;
-    background-color: #f0f1ec;
+    flex: 0 0 25%;
+    height: 18.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
   }
+
   .features-items-title {
     margin: 2.313rem 0 1.563rem 2.344rem;
   }
@@ -382,6 +391,7 @@
     gap: 5.625rem;
   }
   .footer-brand {
+    height: 13rem;
     align-items: flex-start;
     gap: 0;
   }
@@ -411,7 +421,16 @@
   /* =========End ====== */
 }
 
-@media (min-width: 600px) and (max-width: 1024px) {
+@media (min-width: 601px) and (max-width: 1200px) {
+  .main-container {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 23px;
+    padding-left: 8.438rem;
+    padding-right: 8.438rem;
+    background-color: #f3fcf7;
+    height: 53.125rem;
+  }
   .navbar {
     display: none;
   }
@@ -419,14 +438,6 @@
     display: block;
   }
 
-  .main-container {
-    width: 100%;
-    padding-top: 23px;
-    padding-left: 8.438rem;
-    padding-right: 8.438rem;
-    background-color: #f3fcf7;
-    height: 53.125rem;
-  }
   .logo {
     font-style: normal;
     font-weight: 500;
@@ -565,7 +576,7 @@
     align-items: center;
   }
   .company-logo .logo-text-1 {
-    font-size: px;
+    font-size: 1rem;
     font-weight: 300;
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -594,10 +605,43 @@
     flex: 0 0 calc(50% - 1.344rem);
     width: calc(50% - 1.344rem);
   }
+  .features-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .features-items-img,
+  .features-text {
+    flex: 0 0 50%;
+    height: 18.25rem;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .features-items-img .features-img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .features-text {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .footer-brand {
+    height: auto;
+  }
+  /* =====End======== */
 }
 /* Mobile */
 
-@media (max-width: 599px) {
+@media (max-width: 600px) {
   .navbar {
     display: none;
   }

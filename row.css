@@ -15,6 +15,7 @@ body {
 .main-container {
   width: 100%;
   max-width: 1440px;
+  margin: 0 auto;
   padding: 1.563rem 1.875rem 2rem 1.875rem;
   background-color: #f3fcf7;
   height: 53.125rem;
@@ -148,6 +149,7 @@ body {
   font-size: 1rem;
   line-height: 1.188rem;
   cursor: pointer;
+  outline: none;
 }
 .hero-section .hero-right .image-wrapper {
   position: relative;
@@ -231,7 +233,7 @@ body {
   align-items: center;
 }
 .company-logo .logo-text-1 {
-  font-size: px;
+  font-size: 1rem;
   font-weight: 300;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -263,7 +265,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 2.688rem;
 }
 .feature-section .feature .feature-card {
@@ -319,8 +321,8 @@ body {
   width: 100%;
 }
 .benefit-section .benefit .benefit-left {
-  width: 400px;
-  height: 440px;
+  width: 320px;
+  height: 442px;
   background-color: #f0f1ec;
   display: flex;
   justify-content: center;
@@ -331,6 +333,7 @@ body {
 .benefit-section .benefit .vegetable-img {
   width: 274px;
   height: 417px;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   margin-top: -1.813rem;
@@ -408,8 +411,8 @@ body {
 
 /* Left side */
 .stars-left {
-  width: 430px;
-  height: 440px;
+  width: 320px;
+  height: 521px;
   background-color: #f0f1ec;
   display: flex;
   justify-content: center;
@@ -418,6 +421,7 @@ body {
   width: 277px;
   height: 460px;
   display: flex;
+  overflow: hidden;
   justify-content: center;
   margin-top: -3.75rem;
 }
@@ -647,6 +651,7 @@ body {
   line-height: 1.5rem;
   color: #1d1d1f;
   margin-bottom: 1.563rem;
+  white-space: nowrap;
 }
 .product-price {
   display: flex;
